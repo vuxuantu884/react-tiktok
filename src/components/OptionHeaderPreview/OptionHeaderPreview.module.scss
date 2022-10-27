@@ -1,0 +1,49 @@
+.wrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 8px 0px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    font-weight: 600;
+
+    .optionItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        padding: 0 16px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+
+        .optionBox {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .optionIcon {
+            position: relative;
+            color: #000;
+            font-size: 1.75rem;
+        }
+    }
+
+    .optionText {
+        color: rgb(22, 24, 35);
+        font-size: 1.45rem;
+        line-height: 26px;
+        margin-left: 12px;
+    }
+}
+

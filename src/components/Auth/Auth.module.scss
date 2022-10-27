@@ -1,0 +1,119 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 320px;
+    margin: 48px auto 12px;
+    max-height: calc((100vh - 70px) - 60px);
+}
+
+.heading {
+    font-size: 2.25rem;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.backBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 24px 20px;
+    cursor: pointer;
+}
+
+
+.body {
+    position: relative;
+    margin: 32px auto auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-height: calc(100vh - 112px);
+
+    .methodList {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 320px;
+        margin-right: 2px;
+    }
+}
+
+.methodItem {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid rgba(22,24,35,.12);
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px 0 0;
+    cursor: pointer;
+
+    + .methodItem {
+        margin-top: 12px;
+    }
+
+    .methodIcon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgba(22,24,35,.12);
+    
+        * {
+            font-size: 1.6rem;
+            color: #333;
+        }
+    }
+
+    .content {
+        flex: 1 1 auto;
+        .title {
+            margin-left: 12px;
+            word-break: break-word;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            text-align: center;
+            font-size: 1.35rem;
+            color: #161823;
+            font-weight: 600;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 64px;
+    background: #fff;
+    border-top: .5px solid rgba(22,24,35,.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 18px;
+    color: #161823;
+    padding: 0 24px;
+    justify-content: space-between;
+    width: 100%;
+
+    .toggleIsModal {
+        font-size: 1.3rem;
+        span {
+            font-weight: bold;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+    }
+}

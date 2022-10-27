@@ -1,0 +1,21 @@
+.Toastify__toast-container {
+    width: 560px;
+}
+
+.Toastify__toast {
+    min-height: 24px;
+}
+
+.Toastify__toast--default {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.Toastify__toast-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,264 @@
+.wrapper {
+  position: relative;
+  padding: 24px 0px;
+  width: 692px;
+  max-width: 692px;
+  z-index: 1;
+
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+.separate {
+  border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.avatarBox {
+  width: 56px;
+  height: 56px;
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  z-index: 10;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+  float: left;
+  cursor: pointer;
+
+  &:hover .headingBox>.nickName {
+    text-decoration: underline;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  position: relative;
+  margin-left: 68px;
+  min-height: 500px;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 150px;
+  overflow: hidden;
+  line-height: 28px;
+  cursor: pointer;
+
+  &:hover .nickName {
+    text-decoration: underline;
+  }
+}
+
+.nickName {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-right: 4px;
+}
+
+.accountIcon {
+  font-size: 1.3rem;
+  color: rgb(32, 213, 236);
+  margin-right: 4px;
+}
+
+.fullName {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.dot {
+  margin: 0 8px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.time {
+  font-size: 1.3rem;
+  line-height: 24px;
+}
+
+.postContent {
+  position: relative;
+  margin-right: 150px;
+  font-size: 1.5rem;
+  line-height: 22px;
+  color: rgb(18, 18, 18);
+  flex: 0 0 auto;
+  font-weight: normal;
+  margin-bottom: 0px;
+  word-break: break-word;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.followBtn {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+.musicBox {
+  position: relative;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  max-width: 524px;
+  display: flex;
+  align-items: center;
+
+  .musicContent {
+    display: flex;
+    align-items: center;
+  }
+
+  .musicIcon {
+    font-size: 1.6rem;
+    margin-right: 4px;
+  }
+
+  .musicLink {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.actionBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -64px;
+  bottom: 0px;
+
+  .actionItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+
+  .actionIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 2.4rem;
+    border-radius: 50%;
+    background-color: rgba(22, 24, 35, 0.06);
+
+    &:hover {
+      background-color: rgba(22, 24, 35, 0.2);
+    }
+
+    &.liked .icon {
+      color: var(--primary-color);
+  }
+  }
+
+  .reactionCount {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 17px;
+    margin-top: 6px;
+  }
+}
+
+.videoBox {
+  position: relative;
+  display: inline-block;
+
+  .waypoint {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  &:hover {
+    .ctlBtn {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  .video {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ctlBtn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .2s;
+
+    span {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-left: 4px;
+        line-height: 22px;
+        color: rgb(255, 255, 255);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+  }
+
+  .ctlReport {
+      font-size: 1.2rem;
+      top: 24px;
+      right: 16px;
+  }
+
+  .ctlPlay {
+      bottom: 16px;
+      left: 16px;
+  }
+
+  .ctlVolume {
+      bottom: 16px;
+      right: 16px;
+  }
+}
+
+

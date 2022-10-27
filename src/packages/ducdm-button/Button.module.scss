@@ -1,0 +1,90 @@
+.wrapper {
+    font-size: 1.45rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+// .wrapper + .wrapper {
+//   margin-left: 4px;
+// }
+.normal {
+    background: #fff;
+}
+.normalText {
+    color: rgb(22, 24, 35);
+}
+
+.normalBorder {
+    border: 1px solid rgb(227, 227, 228);
+}
+
+.borderNone {
+    border: none;
+}
+
+.primaryBorder {
+    border: 1px solid var(--primary-color);
+}
+
+.primaryText {
+    color: var(--primary-color);
+}
+
+.primary {
+    background: var(--primary-color);
+    color: #fff;
+
+    &:hover {
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.06),
+                rgba(0, 0, 0, 0.06)
+            ),
+            var(--primary-color);
+    }
+}
+
+.border {
+    background-color: #fff;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.underline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.disabled {
+    color: rgba(22, 24, 35, 0.3);
+    background-color: rgba(22, 24, 35, 0.06);
+    pointer-events: none;
+}
+
+.s {
+    padding: 6 12px;
+    height: 28px;
+    min-width: 88px;
+}
+
+.m {
+    padding: 10px 16px;
+    height: 36px;
+    min-width: 100px;
+}
+
+.l {
+    font-weight: 600;
+    padding: 10px 16px;
+    min-width: 208px;
+}
+
+.xl {
+    padding: 10px 16px;
+    height: 48px;
+    min-width: 360px;
+}

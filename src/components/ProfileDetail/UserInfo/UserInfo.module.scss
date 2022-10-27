@@ -1,0 +1,168 @@
+.userInfo {
+    position: relative;
+    margin-bottom: 20px;
+    width: 594px;
+    padding-right: 52px;
+}
+
+.shareInfo {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        position: relative;
+        cursor: pointer;
+        width: 116px;
+        height: 116px;
+        border-color: rgba(22, 24, 35, 0.12);
+        border-width: 0.5px;
+        z-index: 10;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 32px;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .titleContainer {
+        margin-left: 20px;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        align-self: flex-start;
+
+        .title {
+            font-weight: 700;
+            font-size: 2.6rem;
+            line-height: 38px;
+            padding-bottom: 4px;
+            display: flex;
+            align-items: center;
+
+            .tickIcon {
+                margin-left: 4px;
+                display: inline-block;
+                font-size: 2rem;
+                color: rgb(32, 213, 236);
+            }
+        }
+
+        .subTitle {
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 25px;
+            text-overflow: ellipsis;
+            height: 25px;
+            overflow: hidden;
+            max-width: 450px;
+            white-space: nowrap;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.followBox {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    .messageBtn {
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .unfollowBtn {
+        margin-left: 8px;
+        padding: 9.5px;
+    }
+}
+
+.countInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    color: rgba(18, 18, 18, 0.75);
+
+    .followingCount,
+    .followerCount,
+    .likeCount {
+        margin-right: 20px;
+
+        .quantity {
+            color: rgba(18, 18, 18, 0.75);
+            font-size: 1.7rem;
+            line-height: 25px;
+            font-weight: bold;
+        }
+
+        span {
+            color: rgba(18, 18, 18, 0.75);
+            display: inline-block;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 22px;
+            margin-left: 6px;
+        }
+    }
+}
+
+.shareDesc {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: rgb(18, 18, 18);
+    white-space: pre-line;
+}
+
+.shareLink {
+    margin-top: 8px;
+    font-weight: 700;
+    color: rgb(22, 24, 35);
+    cursor: pointer;
+
+    .linkIcon {
+        display: inline-block;
+        font-size: 1.4rem;
+        position: relative;
+        bottom: 8px;
+        margin-right: 4px;
+    }
+
+    .link {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 18px;
+        height: 22px;
+        max-width: 236px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.moreAction {
+    position: absolute;
+    right: 12px;
+    top: 11px;
+    cursor: pointer;
+
+    .moreIcon {
+        font-size: 1.8rem;
+    }
+}

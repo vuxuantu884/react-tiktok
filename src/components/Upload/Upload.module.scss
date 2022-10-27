@@ -1,0 +1,314 @@
+.wrapper {
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.inner {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding-top: 11px;
+}
+
+.header {
+    margin-top: 60px;
+
+    .title {
+        font-size: 5.3rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgb(138, 139, 145);
+        margin-top: 4px;
+    }
+}
+
+.content {
+    margin-top: 40px;
+
+    .operation {
+
+        .upload {
+            height: 100%;
+        }
+
+        .uploadBtn {
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            width: 306px;
+
+            &:hover {
+                background: rgba(22, 24, 35, 0.06);
+            }
+        }
+
+        .card {
+            position: relative;
+            width: 306px;
+            height: 544px;
+            background: rgba(22, 24, 35, 0.03);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+
+            .uploadIcon {
+                width: 49px;
+            }
+            .title {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 24px;
+                text-align: center;
+                color: rgba(22, 24, 35, 0.34);
+                margin-top: 29px;
+            }
+
+            .subTitle {
+                font-weight: 400;
+                font-size: 1.45rem;
+                line-height: 18px;
+                color: rgba(22, 24, 35, 0.34);
+                margin-top: 15px;
+            }
+            .requirementList {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 1.45rem;
+                line-height: 18px;
+                color: rgba(22, 24, 35, 0.34);
+                text-align: left;
+            }
+            .requirementItem {
+                font-weight: 400;
+                font-size: 1.45rem;
+                line-height: 18px;
+                color: rgba(22, 24, 35, 0.34);
+            }
+        }
+
+        .uploadInput {
+            width: 100%;
+            height:100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+        }
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .requireCharacters {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 17px;
+        color: rgba(22, 24, 35, 0.5);
+        white-space: pre;
+    }
+}
+
+
+.editor {
+    margin-top: 14px;
+    min-height: 44px;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    
+    .textInput {
+        width: 100%;
+        padding: 10px 80px 10px 16px;
+        font-size: 1.6rem;
+    }
+
+    .icon {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        top: 12px;
+        cursor: pointer;
+
+        &.iconTag {
+            right: 40px;
+        }
+
+        &.iconHash {
+            right: 12px;
+        }
+    }
+}
+
+.cover {
+    margin-top: 45px;
+    
+    .coverList {
+        margin-top: 12px;
+        position: relative;
+        padding: 9px;
+        border: 1px solid rgba(22, 24, 35, 0.12);
+        border-radius: 2px;
+
+        .candidate {
+            width: 66px;
+            height: 118px;
+            object-fit: cover;
+            margin-right: 9px;
+
+            &.empty {
+                background-color: rgba(22, 24, 35, 0.03);
+            }
+        }
+    }
+}
+
+.selector {
+    margin-top: 45px;
+    display: flex;
+
+    .permission {
+        position: relative;
+        
+        &:first-child {
+            margin-right: 25px;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 32px;
+            vertical-align: top;
+            color: rgb(0, 0, 0);
+            margin-bottom: 12px;
+        }
+
+        .radioGroup {
+            display: flex;
+            padding-bottom: 30px;
+
+            .radioItem {
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                margin-right: 32px;
+
+                input {
+                    display: none;
+                }
+
+                .radioBox {
+                    flex: 0 0 22px;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 13px;
+                    vertical-align: middle;
+                    border-radius: 11px;
+                    background: rgb(255, 255, 255);
+                    border: 1.5px solid rgba(22, 24, 35, 0.12);
+                    position: relative;
+
+                    &.checked::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -7px;
+                        margin-top: -7px;
+                        background: rgb(45, 140, 240);
+                        border-radius: 7px;
+                    }
+                }
+            }
+        }
+
+        .checkboxGroup {
+            display: flex;
+            padding-bottom: 30px;
+
+            .checkboxItem {
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                margin-right: 32px;
+
+                input {
+                    display: none;
+                }
+
+                .checkboxBox {
+                    flex: 0 0 22px;
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 13px;
+                    vertical-align: middle;
+                    background: rgb(255, 255, 255);
+                    border: 1.5px solid rgba(22, 24, 35, 0.12);
+                    position: relative;
+
+                    &.checked {
+                        background: rgb(45, 140, 240);
+                        border: none;
+                    }
+                    
+                    &.checked::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -7px;
+                        margin-top: -7px;
+                        
+                        background: url("https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/checked-690bcb6139041f6e7bf0a380b2bba038.svg") center center / contain no-repeat transparent
+                    }
+                }
+            }
+        }
+    }
+}
+
+.post {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}

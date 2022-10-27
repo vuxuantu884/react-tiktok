@@ -1,0 +1,137 @@
+.accountList {
+  width: 100%;
+  position: relative;
+  padding: 4px 0 10px 12px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 16px;
+    right: 0;
+    background: rgba(22, 24, 35, 0.2);
+    transform: scaleY(0.5);
+    margin-top: 20px;
+  }
+}
+
+.heading {
+  margin-bottom: 8px;
+  padding: 16px 0 0 4px;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(22, 24, 35, 0.75);
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.AccountItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 64px;
+  padding-left: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(11, 24, 35, 0.04);
+  }
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+  z-index: 10;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.accountBody {
+  margin-left: 12px;
+  height: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.accountTitle {
+  height: 25px;
+  font-weight: 700;
+  font-size: 1.45rem;
+  line-height: 25px;
+  color: rgb(22, 24, 35);
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.accountHeading {
+  max-width: 132px;
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.accountIcon {
+  font-size: 1.3rem;
+  color: rgb(32, 213, 236);
+}
+
+.accountDesc {
+  height: 20px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: rgb(22, 24, 35);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 140px;
+}
+
+.seeAllBtn {
+  height: 25px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  color: var(--primary-color);
+
+  p {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 18px;
+    margin-right: 4px;
+  }
+
+  .seeAllIcon {
+    font-size: 1.4rem;
+  }
+}

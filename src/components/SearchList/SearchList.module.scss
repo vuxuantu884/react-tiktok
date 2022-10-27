@@ -1,0 +1,128 @@
+.wrapper {
+    position: relative;
+    margin: auto;
+    padding: 16px 24px 16px 67px;
+    z-index: 2;
+}
+
+.searchItem {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 200%;
+        height: 1px;
+        transform: scale(0.5);
+        transform-origin: left bottom;
+        background-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-color: rgba(22, 24, 35, 0.12);
+    border-width: 0.5px;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.resultBody {
+    .resultTitle {
+        font-size: 1.8rem;
+        line-height: 25px;
+        font-weight: bold;
+        color: rgb(22, 24, 35);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .resultIcon {
+            font-size: 1.3rem;
+            color: rgb(32, 213, 236);
+            margin-left: 4px;
+        }
+    }
+
+    .subTitle {
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1px;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 20px;
+        color: rgba(22, 24, 35, 0.75);
+
+        .subTitleHeading {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(22, 24, 35, 0.75);
+        margin-right: 4px;   
+        }
+
+        .dot {
+            margin-right: 4px;
+        }
+
+        .subTitleContent {
+            font-weight: 600;
+            color: rgb(22, 24, 35);
+            
+
+            span {
+                font-weight: 400;
+                color: rgba(22, 24, 35, 0.75);
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .desc {
+        margin-top: 4px;
+        font-size: 1.3rem;
+        line-height: 20px;
+        color: rgb(22, 24, 35);
+    }
+}
+
+.loadMore {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: rgba(22, 24, 35, 0.5);
+    text-align: center;
+    cursor: pointer;
+    padding: 16px;
+
+    .loadMoreIcon {
+        margin-left: 4px;
+        font-size: 1.4rem;
+        color: rgb(196, 196, 196);
+    }
+}

@@ -1,0 +1,272 @@
+.wrapper {
+    position: relative;
+    padding: 32px 32px 0px;
+}
+
+.userInfo {
+    .userItem {
+        position: relative;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 22px 0px 15px;
+        color: rgb(22, 24, 35);
+    }
+}
+
+.avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-color: rgba(22, 24, 35, 0.12);
+    border-width: 0.5px;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.userBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    overflow: hidden;
+    margin-right: 12px;
+    color: rgb(22, 24, 35);
+    cursor: pointer;
+
+    &:hover .userHeading {
+        text-decoration: underline;
+    }
+
+    .userTitle {
+        display: flex;
+        align-items: center;
+    }
+    .userHeading {
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 25px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 4px;
+    }
+
+    .userDesc {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+
+    .userIcon {
+        font-size: 1.3rem;
+        color: rgb(32, 213, 236);
+    }
+}
+
+.contentInfo {
+    .title {
+        font-size: 1.7rem;
+        line-height: 24px;
+        color: rgb(18, 18, 18);
+    }
+
+    .musicBox {
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        max-width: 524px;
+        display: flex;
+        align-items: center;
+
+        .musicContent {
+            display: flex;
+            align-items: center;
+        }
+
+        .musicIcon {
+            font-size: 1.6rem;
+            margin-right: 4px;
+        }
+
+        .musicLink {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.actionBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        transform: scaleY(0.5);
+        border-top: 1px solid rgba(18, 18, 18, 0.12);
+        top: 0;
+    }
+
+    .reactionBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .actionItem {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 20px;
+
+            .actionBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                font-size: 2rem;
+                border-radius: 50%;
+                background-color: rgba(22, 24, 35, 0.06);
+
+                &.select:hover {
+                    background-color: rgba(22, 24, 35, 0.2);
+                }
+
+                &.liked .icon {
+                    color: var(--primary-color);
+                }
+            }
+
+            .reactionCount {
+                color: rgba(22, 24, 35, 0.75);
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 17px;
+                margin-left: 6px;
+            }
+        }
+    }
+
+    .shareBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .shareWord {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-right: 8px;
+            line-height: 24px;
+            color: rgba(22, 24, 35, 0.75);
+        }
+
+        .shareGroup {
+            .shareBtn {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            .shareIcon {
+                color: #fff;
+                font-size: 1.35rem;
+            }
+
+            .whatsapp {
+                background-color: rgb(37, 211, 102);
+            }
+
+            .facebook {
+                background-color: rgb(0, 117, 250);
+            }
+
+            .twitter {
+                background-color: rgb(29, 161, 242);
+            }
+
+            .code {
+                background-color: rgba(22, 24, 35, 0.75);
+            }
+        }
+    }
+}
+
+.copyLink {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 18px;
+    height: 32px;
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    border-radius: 2px;
+    overflow: hidden;
+
+    .link {
+        font-weight: 400;
+        padding: 0 6px;
+        font-size: 1.35rem;
+        resize: none;
+        border: none;
+        outline: none;
+        line-height: 30px;
+        width: 460px;
+        height: 30px;
+        color: rgba(22, 24, 35, 0.75);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        background-color: rgb(241, 241, 242);
+        user-select: none;
+    }
+
+    .copyBtn {
+        display: flex;
+        flex-shrink: 0;
+        cursor: pointer;
+        align-items: center;
+        color: #000;
+
+        .contentBtn {
+            font-weight: 600;
+            padding: 0px 16px 0px 9px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            line-height: 32px;
+        }
+    }
+}

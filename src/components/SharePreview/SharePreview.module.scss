@@ -1,0 +1,71 @@
+.wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 280px;
+    max-width: 280px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+    font-weight: 600;
+
+    .shareItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        padding: 11px 16px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+
+        .shareBox {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .shareIcon {
+            position: relative;
+            color: #fff;
+            font-size: 1.35rem;
+        }
+        
+        .whatsapp {
+            background-color: rgb(37, 211, 102);   
+        }
+        
+        .facebook {
+            background-color: rgb(0, 117, 250);  
+        }
+        
+        .twitter {
+            background-color: rgb(29, 161, 242);
+        }
+        
+        .embed {
+            background-color: rgba(22, 24, 35, 0.75);
+        }
+
+        .link {
+            background-color: rgb(254,44,85);
+        }
+    }
+
+
+    .shareText {
+        color: rgb(22, 24, 35);
+        font-size: 1.45rem;
+        line-height: 26px;
+        margin-left: 12px;
+    }
+}
+

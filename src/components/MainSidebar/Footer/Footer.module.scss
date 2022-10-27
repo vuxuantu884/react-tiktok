@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    width: 240px;
+    box-sizing: border-box;
+    color: rgba(22, 24, 35, 0.5);
+  }
+  
+  .pageLinkFooter,
+  .programLinkFooter,
+  .legalLinkFooter,
+  .moreFooter {
+    margin-bottom: 8px;
+  }
+  
+  .copyrightFooter {
+    margin-bottom: 12px;
+  }
+  
+  .linkItem,
+  .copyrightFooter {
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 12px;
+    color: rgba(22, 24, 35, 0.5) !important;
+  }

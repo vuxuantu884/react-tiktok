@@ -1,0 +1,70 @@
+.topSidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 26px;
+    padding-bottom: 4px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        left: 16px;
+        right: 0;
+        background: rgba(22, 24, 35, 0.2);
+        transform: scaleY(0.5);
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        margin-bottom: 8px;
+
+        .navItem {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 16px 12px 12px;
+
+            span {
+                font-size: 2.4rem;
+                line-height: 28px;
+                margin-left: 13px;
+                word-break: break-all;
+            }
+
+            &.active {
+                font-weight: 600;
+                color: var(--primary-color);
+
+                .navIcon {
+                    fill: var(--primary-color);
+                }
+            }
+
+            &:hover {
+                background-color: rgba(11, 24, 35, 0.04);
+            }
+        }
+    }
+
+    .loginWrapper {
+        padding: 0 16px;
+        margin: 36px 0 20px;
+
+        .helpText {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 22px;
+            color: rgba(22, 24, 35, 0.5);
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}

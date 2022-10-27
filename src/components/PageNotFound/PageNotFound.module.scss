@@ -1,0 +1,59 @@
+.wrapper {
+    padding-top: 180px;
+    background: url("https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/404_new_bg-646e26644819c93c63dfcac66188a9d1.png")
+        transparent center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-weight: 500;
+    height: calc(100vh - 60px);
+}
+
+.statusCode {
+    font-size: 300px;
+    line-height: 244px;
+    white-space: nowrap;
+}
+
+.img {
+    width: 244px;
+    height: 244px;
+    vertical-align: middle;
+}
+
+.desc {
+    font-family: "proxima-regular", PingFangSC, sans-serif;
+    font-weight: 400;
+    margin: 24px auto 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(22, 24, 35, 0.5);
+    line-height: 25px;
+}
+
+.recommend {
+    font-family: "sofiapro-bold", PingFangSC, sans-serif;
+    font-weight: 700;
+    margin: 40px auto 40px;
+    max-width: 622px;
+    font-size: 24px;
+    line-height: 28px;
+    word-break: break-word;
+}
+
+.watchNow {
+    width: 358px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+
+    span {
+        color: #fff;
+    }
+}
+
+.watchIcon {
+    font-size: 2rem;
+    margin-right: 8px;
+}

@@ -1,0 +1,96 @@
+.wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 320px;
+    max-height: 279px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 4px 16px);
+}
+
+.header {
+    display:block;
+
+    .avatar {
+        width: 44px;
+        height: 44px;
+        border-color: rgba(22, 24, 35, 0.12);
+        border-width: 0.5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 32px;
+        border-radius: 50%;
+        z-index: 10;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: default;
+        margin-top: 8px;
+        .infoTitle {
+            font-weight: 700;
+            font-size: 1.75rem;
+            line-height: 22px;
+            
+            .tickIcon {
+                font-size: 1.45rem;
+                color: rgb(32, 213, 236);
+                margin-left: 4px;
+            }
+        }
+
+        .infoDesc {
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 20px;
+        }
+    }
+
+    .followBtn {
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+        top: 24px;
+    }
+}
+
+.interactive {
+    margin-top: 8px;
+    min-height: 20px;
+
+    .followersCount, .likesCount {
+        display: inline-block;
+
+        .quantity {
+            font-weight: 600;
+            font-size: 1.7rem;
+            line-height: 20px;
+        }
+
+        .text {
+            font-weight: 300;
+            margin: 0px 12px 0px 6px;
+            font-size: 17px;
+            line-height: 20px;
+            color: rgba(22, 24, 35, 0.75);
+        }
+    }
+}
