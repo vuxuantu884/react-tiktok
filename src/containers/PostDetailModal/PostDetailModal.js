@@ -48,7 +48,7 @@ function PostDetail({
 
     useEffect(() => {
         axios
-            .get(`/api/posts/${data.id}/comments?page=${pagination.currentPage}`)
+            .get(`/api/videos/${data.id}/comments?page=${pagination.currentPage}`)
             .then((res) => {
                 setComments((prevState) => [
                     ...prevState,
@@ -103,7 +103,7 @@ function PostDetail({
     const handleComment = () => {
         if (!commentText) return;
         axios
-            .post(`/api/posts/${data.id}/comments`, { comment: commentText })
+            .post(`/api/videos/${data.id}/comments`, { comment: commentText })
             .then((res) => {
                 setComments((prevState) => [res.data, ...prevState]);
                 setCommentText("")

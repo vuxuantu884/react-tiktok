@@ -14,7 +14,7 @@ function ConversationBox() {
             <div className={styles.inner}>
                 <div className={styles.header}>
                     <Link to="/" className={styles.avatar}>
-                        <img src="https://tiktok.f8team.dev/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
+                        <img src="https://tiktok.fullstack.edu.vn/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
                     </Link>
                     <Link to="/" className={styles.info}>
                         <p className={styles.title}>
@@ -31,7 +31,7 @@ function ConversationBox() {
                     <div className={[styles.messageItem].join(' ')}>
                         <div className={styles.messageInfo}>
                             <Link to="/" className={styles.messageAvatar}>
-                                <img src="https://tiktok.f8team.dev/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
+                                <img src="https://tiktok.fullstack.edu.vn/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
                             </Link>
                             <div className={styles.messageText}>
                                 <p>hello</p>
@@ -45,7 +45,7 @@ function ConversationBox() {
                     <div className={[styles.messageItem, styles.myself].join(' ')}>
                         <div className={[styles.messageInfo, styles.myself].join(' ')}>
                             <Link to="/" className={styles.messageAvatar}>
-                                <img src="https://tiktok.f8team.dev/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
+                                <img src="https://tiktok.fullstack.edu.vn/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
                             </Link>
                             <div className={styles.messageText}>
                                 <p>hello</p>

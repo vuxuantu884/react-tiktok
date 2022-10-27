@@ -35,7 +35,7 @@ function Home({type = 'for-you'}) {
     useEffect(() => {
         // Get Post
         axios
-            .get(`/api/posts?type=${type}&page=${pagination.currentPage}&except=${videoId}`)
+            .get(`/api/videos?type=${type}&page=${pagination.currentPage}&except=${videoId}`)
             .then((res) => {
                 setPosts((prevState) => [
                     ...prevState,
@@ -55,7 +55,7 @@ function Home({type = 'for-you'}) {
         
         // Get A Post 
         if(videoId) {
-            axios.get(`/api/posts/${videoId}`)
+            axios.get(`/api/videos/${videoId}`)
             .then(res => {
                 setPostDetail(Post.create(res.data))
             })
@@ -187,8 +187,8 @@ function Home({type = 'for-you'}) {
     };
 
     const handleToggleLike = (post) => {
-        let apiPath = `/api/posts/${post.id}/like`
-        if (post.is_liked) apiPath = `/api/posts/${post.id}/unlike`
+        let apiPath = `/api/videos/${post.id}/like`
+        if (post.is_liked) apiPath = `/api/videos/${post.id}/unlike`
 
         axios
             .post(apiPath)

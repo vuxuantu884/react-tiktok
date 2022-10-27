@@ -5,7 +5,7 @@ function ConversationItem() {
         <div className={styles.conversationItem}>
             <div className={styles.info}>
                 <div className={styles.avatar}>
-                    <img src="https://tiktok.f8team.dev/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
+                    <img src="https://tiktok.fullstack.edu.vn/storage/users/10/Lgcm4zvYfUwLCi4KqZ903seFPrh9deMpDY8sDoiT.jpg" alt="" />
                 </div>
                 <div className={styles.content}>
                     <p className={styles.nickname}>

@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals'
 import '~/assets/styles/global.scss'
 
 // Global config axios
-axios.defaults.baseURL = 'https://tiktok.f8team.dev'
+axios.defaults.baseURL = 'https://tiktok.fullstack.edu.vn'
 
 // Add a response interceptor
 axios.interceptors.response.use(function (response) {
