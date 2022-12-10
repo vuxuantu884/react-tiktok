@@ -104,7 +104,7 @@ function Profile() {
                     isOpen={tab === MYVIDEO_TAB}
                 >
                     <Row>
-                        {user.posts.map(post => (
+                        {user.posts?.map(post => (
                             <VideoItem
                                 key={post.id}
                                 post={post}
